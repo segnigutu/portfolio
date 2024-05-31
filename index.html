@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img src="" alt="">
-             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">contact</a></li>
+             <ul id="sidemenu">
+                <li><a href="#header">home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
              </ul>
+             <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Enginering Student</p>
@@ -36,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/back.jpg" alt="">
+                    <img src="images/t7.jpg" alt="">
 
                 </div>
                 <div class="about-col-2">
@@ -129,7 +131,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/back.jpg" alt="">
+                    <img src="images/t4.jpg" alt="">
                     <div class="layer">
                         <h3>social media app</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam! </p>
@@ -137,7 +139,7 @@
                 </div>
 
                 <div class="work">
-                    <img src="images/back.jpg" alt="">
+                    <img src="images/t4.jpg" alt="">
                     <div class="layer">
                         <h3>social media app</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam! </p>
@@ -145,7 +147,7 @@
                 </div>
 
                 <div class="work">
-                    <img src="images/back.jpg" alt="">
+                    <img src="images/t4.jpg" alt="">
                     <div class="layer">
                         <h3>social media app</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam! </p>
@@ -187,7 +189,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>copyright © segni. Made with <i class="fas fa-heart"></i> by Segni Gutu </p>
+            <p>copyright © segni. Made <i class="fas fa-heart"></i> by Segni Gutu </p>
         </div>
     </div>
 
@@ -211,6 +213,18 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 </script>
 
 </body>
